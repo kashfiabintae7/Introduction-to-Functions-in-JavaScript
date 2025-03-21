@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>Scope of Variables</h1>
+    <button onclick="myFunction()">CLICK!!</button>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+      var b = 30;
+      function myFunction() {
+        var a = 15;
+        document.getElementById("demo1").innerHTML = a * b;
+      }
+      document.getElementById("demo2").innerHTML = b * 10;
+    </script>
+  </body>
+</html>

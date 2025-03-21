@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h2>Regular/Expression/Arrow Function</h2>
+
+    <script>
+      function add(a, b) {
+        return a + b;
+      }
+
+      var sub = function (a, b) {
+        return a - b;
+      };
+      var mult = (a, b) => a * b;
+
+      document.write(`Regular Function: ${add(45, 15)} <br>`);
+      document.write(`Expression Function: ${sub(45, 15)} <br>`);
+      document.write(`Arrow Function: ${mult(45, 15)} <br>`);
+    </script>
+  </body>
+</html>
