@@ -2,10 +2,20 @@
 <html lang="en">
   <head>
     <title>Document</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <h2>Regular/Expression/Arrow Function</h2>
+    <main>
+      <h1 style="margin-bottom: 100px">
+        Types of Javascript <span>Functions</span>
+      </h1>
+      <p id="sum"></p>
+      <p id="sub"></p>
+      <p id="mult"></p>
+      <p id="div"></p>
+      <p id="mod"></p>
+    </main>
 
     <script>
       function add(a, b) {
@@ -17,9 +27,31 @@
       };
       var mult = (a, b) => a * b;
 
-      document.write(`Regular Function: ${add(45, 15)} <br>`);
-      document.write(`Expression Function: ${sub(45, 15)} <br>`);
-      document.write(`Arrow Function: ${mult(45, 15)} <br>`);
+      function div(a, b) {
+        return a / b;
+      }
+
+      var mod = (a, b) => a % b;
+
+      var a = 60;
+      var b = 5;
+
+      document.getElementById("sum").innerHTML = `The sum is : ${add(a, b)}`;
+      document.getElementById("sub").innerHTML = `The subtraction is : ${sub(
+        a,
+        b
+      )}`;
+      document.getElementById(
+        "mult"
+      ).innerHTML = `The multiplication is: ${mult(a, b)}`;
+      document.getElementById("div").innerHTML = `The division is : ${div(
+        a,
+        b
+      )}`;
+      document.getElementById("mod").innerHTML = `The modulus is : ${mod(
+        a,
+        b
+      )}`;
     </script>
   </body>
 </html>
